@@ -55,7 +55,7 @@ class Program
             }
             else
             {
-                gameStartScreen("You must enter a digit 0-4 !");
+                gameStartScreen("You must enter a digit 0-4 !!");
             }
         }
     }
@@ -84,7 +84,7 @@ class Program
 
         if (!char.IsDigit(difficulty.KeyChar))
         {
-            Console.WriteLine("\nYou must enter a digit 1-3 !!!\nPress any key to continue");
+            Console.WriteLine("\nYou must enter a digit 1-3 !!!\nPress any key to continue.");
             Console.ReadKey();
             gameLogic(choice);
         }
@@ -176,7 +176,7 @@ class Program
         {
             Console.WriteLine("No input provided.\nPress any key to continue.");
             Console.ReadKey();
-            gameLogic(choice); // Assuming gameLogic is defined elsewhere
+            gameLogic(choice); 
         }
 
         if (int.TryParse(input, out int result))
@@ -192,11 +192,11 @@ class Program
                 int decisionNum = decision.KeyChar - '0';
                 if (decisionNum == 1)
                 {
-                    gameLogic(choice); // Assuming gameLogic is defined elsewhere
+                    gameLogic(choice); 
                 }
                 else if (decisionNum == 2)
                 {
-                    gameStartScreen(); // Assuming gameStartScreen is defined elsewhere
+                    gameStartScreen();
                 }
                 else
                 {
